@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DCE2A7;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nsu.ccfit.voytenko.factory.ViewController">
+   <children>
+      <Label layoutX="211.0" layoutY="38.0" text="AUTO FACTORY" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="95.0" text="SPEED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider id="sliderDealer" fx:id="sliderDealer" layoutX="105.0" layoutY="152.0" onMouseClicked="#dragSliderDealer" onMouseDragged="#dragSliderDealer" onMouseEntered="#dragSliderDealer" onMousePressed="#dragSliderDealer" onMouseReleased="#dragSliderDealer" prefHeight="38.0" prefWidth="128.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="3.0" layoutY="153.0" text="Dealers speed:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="dealerLabel" fx:id="dealerLabel" layoutX="232.0" layoutY="153.0" text="Label" />
+      <Label layoutX="275.0" layoutY="154.0" text="Accessory Producer:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Slider id="sliderAccessory" fx:id="sliderAccessory" layoutX="416.0" layoutY="153.0" onMouseClicked="#dragSliderAccessory" onMouseDragged="#dragSliderAccessory" onMouseEntered="#dragSliderAccessory" onMousePressed="#dragSliderAccessory" onMouseReleased="#dragSliderAccessory" prefHeight="16.0" prefWidth="128.0" showTickLabels="true" showTickMarks="true" />
+      <Label id="accessoryProducerLabel" fx:id="accessoryProducerLabel" layoutX="546.0" layoutY="153.0" text="Label" />
+      <Label layoutX="285.0" layoutY="253.0" text="Count">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="303.0" text="Motors:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label id="motorCountLabel" fx:id="motorCountLabel" layoutX="79.0" layoutY="304.0" text="Label" />
+      <Label layoutX="168.0" layoutY="306.0" text="Bodys:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label id="motorCountLabel" fx:id="bodyCountLabel" layoutX="223.0" layoutY="307.0" text="Label" />
+      <Label layoutX="299.0" layoutY="307.0" text="Accessory:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="308.0" text="Label" />
+      <Label layoutX="467.0" layoutY="308.0" text="Autos:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label id="accessoryCountLabel" fx:id="accessoryCountLabel" layoutX="518.0" layoutY="309.0" text="Label" />
+      <Label layoutX="2.0" layoutY="202.0" text="Motor Producer:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Slider id="sliderMotor" fx:id="sliderMotor" layoutX="113.0" layoutY="201.0" onMouseClicked="#dragSliderMotor" onMouseDragged="#dragSliderMotor" onMouseEntered="#dragSliderMotor" onMousePressed="#dragSliderMotor" onMouseReleased="#dragSliderMotor" prefHeight="16.0" prefWidth="128.0" showTickLabels="true" showTickMarks="true" />
+      <Label id="motorProducerLabel" fx:id="motorProducerLabel" layoutX="239.0" layoutY="201.0" text="Label" />
+      <Label layoutX="288.0" layoutY="201.0" text="Body Producer:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Slider id="sliderBody" fx:id="sliderBody" layoutX="402.0" layoutY="201.0" onMouseClicked="#dragSliderBody" onMouseDragged="#dragSliderBody" onMouseEntered="#dragSliderBody" onMousePressed="#dragSliderBody" onMouseReleased="#dragSliderBody" prefHeight="16.0" prefWidth="128.0" showTickLabels="true" showTickMarks="true" />
+      <Label id="bodyProducerLabel" fx:id="bodyProducerLabel" layoutX="533.0" layoutY="200.0" text="Label" />
+   </children>
+</AnchorPane>
